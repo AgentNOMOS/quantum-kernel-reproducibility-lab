@@ -1,0 +1,121 @@
+{
+ "quantities": {},
+ "per_pair": {
+  "P0": {
+   "canonical_ryy": 144,
+   "canonical_rz": 36,
+   "simplified_ryy": 0,
+   "simplified_rz": 0,
+   "simplified_h": 0,
+   "sealed_artifact_ryy": 0,
+   "FEATURE_MAP_INTERACTIONS": 144,
+   "LOGICAL_ENTANGLING_GATES": 0,
+   "NATIVE_2Q_at_2_per_RYY": 0,
+   "yy_blocks": 0,
+   "rewrite_trace": [
+    "fuse RYY",
+    "drop zero RYY",
+    "fuse RZ",
+    "drop zero RZ",
+    "cancel H.H",
+    "fuse RYY",
+    "drop zero RYY",
+    "fuse RZ",
+    "drop zero RZ",
+    "cancel H.H"
+   ]
+  },
+  "P1": {
+   "canonical_ryy": 144,
+   "canonical_rz": 36,
+   "simplified_ryy": 108,
+   "simplified_rz": 36,
+   "simplified_h": 36,
+   "sealed_artifact_ryy": 108,
+   "FEATURE_MAP_INTERACTIONS": 144,
+   "LOGICAL_ENTANGLING_GATES": 108,
+   "NATIVE_2Q_at_2_per_RYY": 216,
+   "yy_blocks": 3,
+   "rewrite_trace": [
+    "fuse RYY"
+   ]
+  },
+  "P2": {
+   "canonical_ryy": 144,
+   "canonical_rz": 36,
+   "simplified_ryy": 108,
+   "simplified_rz": 36,
+   "simplified_h": 36,
+   "sealed_artifact_ryy": 108,
+   "FEATURE_MAP_INTERACTIONS": 144,
+   "LOGICAL_ENTANGLING_GATES": 108,
+   "NATIVE_2Q_at_2_per_RYY": 216,
+   "yy_blocks": 3,
+   "rewrite_trace": [
+    "fuse RYY"
+   ]
+  },
+  "P3": {
+   "canonical_ryy": 144,
+   "canonical_rz": 36,
+   "simplified_ryy": 108,
+   "simplified_rz": 36,
+   "simplified_h": 36,
+   "sealed_artifact_ryy": 108,
+   "FEATURE_MAP_INTERACTIONS": 144,
+   "LOGICAL_ENTANGLING_GATES": 108,
+   "NATIVE_2Q_at_2_per_RYY": 216,
+   "yy_blocks": 3,
+   "rewrite_trace": [
+    "fuse RYY"
+   ]
+  },
+  "P4": {
+   "canonical_ryy": 144,
+   "canonical_rz": 36,
+   "simplified_ryy": 108,
+   "simplified_rz": 36,
+   "simplified_h": 36,
+   "sealed_artifact_ryy": 108,
+   "FEATURE_MAP_INTERACTIONS": 144,
+   "LOGICAL_ENTANGLING_GATES": 108,
+   "NATIVE_2Q_at_2_per_RYY": 216,
+   "yy_blocks": 3,
+   "rewrite_trace": [
+    "fuse RYY"
+   ]
+  }
+ },
+ "sealed_er01b2": {
+  "intrinsic_2q": {
+   "P0": 0,
+   "P1": 216,
+   "P2": 216,
+   "P3": 216,
+   "P4": 216
+  },
+  "total_cz": {
+   "P0": 0,
+   "P1": 495,
+   "P2": 382,
+   "P3": 382,
+   "P4": 382
+  },
+  "routing_overhead": {
+   "P0": 0,
+   "P1": 279,
+   "P2": 166,
+   "P3": 166,
+   "P4": 166
+  }
+ },
+ "ryy_native_decomposition": {
+  "cz_per_ryy": 2,
+  "ops": {
+   "rz": 5,
+   "sx": 4,
+   "cz": 2,
+   "x": 1
+  }
+ }
+}

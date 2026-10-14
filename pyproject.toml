@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qkrl"
+version = "0.1.0"
+description = "Quantum Kernel Reproducibility Lab: reproduction of a 9-qubit quantum-kernel IBM hardware baseline and an IonQ trapped-ion experiment plan"
+requires-python = ">=3.12"
+license = { text = "MIT (code and documentation); data under CC-BY-4.0, see NOTICE.md" }
+dependencies = ["qiskit==2.5.2", "qiskit-ionq==1.1.1", "qiskit-qasm3-import==0.6.0", "numpy", "scipy"]
+
+[tool.setuptools]
+packages = ["qkrl"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

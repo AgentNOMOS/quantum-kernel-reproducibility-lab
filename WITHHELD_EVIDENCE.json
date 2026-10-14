@@ -1,0 +1,77 @@
+{
+ "status": "WITHHELD from public release: redistribution rights unresolved",
+ "note": "sha256 = digest of the redacted file a reviewer would receive; sealed_source_sha256 = digest of the original sealed file (differs because account identifiers were redacted). Integrity only, not provenance.",
+ "evidence_dir_layout": "paths are relative to the directory passed as --evidence-dir",
+ "files": [
+  {
+   "path": "ibm_marrakesh_job_da591ju1vhnc73flpn0g/IBM_00_presubmission.json",
+   "sha256": "8bbc20c6379f8ac0c4c65c4120eec07901db7ada3f1de72bd4a735d76aa4fd26",
+   "bytes": 9404,
+   "sealed_source_sha256": "92a823a873b7f2e51e3002446bc35b1010e1e9eeaf69075732b5496f79f5b389",
+   "reason": "provider-returned backend status, calibration values and usage record"
+  },
+  {
+   "path": "ibm_marrakesh_job_da591ju1vhnc73flpn0g/IBM_01_submission.json",
+   "sha256": "b536d69edccff4cc6e51aa7bb8787d3f3611caae0b8475a3323a93b1e1f20ded",
+   "bytes": 273,
+   "sealed_source_sha256": "b536d69edccff4cc6e51aa7bb8787d3f3611caae0b8475a3323a93b1e1f20ded",
+   "reason": "provider job submission record"
+  },
+  {
+   "path": "ibm_marrakesh_job_da591ju1vhnc73flpn0g/IBM_02_terminal.json",
+   "sha256": "ea2d2d85a478409c9e2606ed9c4bc60ac53330bdf8f8dbb191c04d8e33d72baa",
+   "bytes": 63168,
+   "sealed_source_sha256": "f8ff6a4b11ee4e52baa078f5de0433de79dc6cd9009b4b127ec899e5411e086c",
+   "reason": "raw provider output: 512-outcome count histograms, execution spans, job metrics, usage"
+  },
+  {
+   "path": "ibm_marrakesh_job_da591ju1vhnc73flpn0g/ER01B-R1__IBM_PILOT_BATCH.attempt.json",
+   "sha256": "47312d052c18db38afec9809e4e47a55e7f962da8aa624057c264e3457e48555",
+   "bytes": 295,
+   "sealed_source_sha256": "47312d052c18db38afec9809e4e47a55e7f962da8aa624057c264e3457e48555",
+   "reason": "attempt lock bound to the provider job record"
+  },
+  {
+   "path": "ibm_marrakesh_target_subset.json",
+   "sha256": "2cd05c078f3df2eb2d658033b894169c6da7d19331198ef4a79242c582fff7fb",
+   "bytes": 8352,
+   "sealed_source_sha256": "cecee09b1ea63b3b4af09adbb839e9d90ad19cf933f9d9e81c1545b5c307b08f",
+   "reason": "provider metadata: ibm_marrakesh coupling map and basis gates"
+  },
+  {
+   "path": "historical_derived/er01b_analysis.json",
+   "sha256": "b88927927543eba887adc203dcffc1e1536bb4274ebbc7852a42893fb544e864",
+   "bytes": 4066,
+   "sealed_source_sha256": "b88927927543eba887adc203dcffc1e1536bb4274ebbc7852a42893fb544e864",
+   "reason": "derived directly from the raw provider counts"
+  },
+  {
+   "path": "historical_derived/er01b_stats_addendum.json",
+   "sha256": "6e9eba5d56de700dc168a3ce28923540972226b4f4d13de9f177763791768503",
+   "bytes": 1534,
+   "sealed_source_sha256": "6e9eba5d56de700dc168a3ce28923540972226b4f4d13de9f177763791768503",
+   "reason": "derived directly from the raw provider counts"
+  },
+  {
+   "path": "historical_derived/ibm_compilation.json",
+   "sha256": "cd4de98d415267a9477522951c2ab02fcb3fb40ea2121d6ab248bbae29969300",
+   "bytes": 4977,
+   "sealed_source_sha256": "cd4de98d415267a9477522951c2ab02fcb3fb40ea2121d6ab248bbae29969300",
+   "reason": "compilation log bound to the provider target snapshot"
+  },
+  {
+   "path": "historical_derived/er01b21_topology_scan.json",
+   "sha256": "00e5576d7307c838eb8819bc4916cfcf77bd0c540bfd34565a365f94f194aed6",
+   "bytes": 2742745,
+   "sealed_source_sha256": "00e5576d7307c838eb8819bc4916cfcf77bd0c540bfd34565a365f94f194aed6",
+   "reason": "embeds provider coupling graphs (IBM heavy-hex, QuTech Tuna-9)"
+  },
+  {
+   "path": "historical_derived/er01b2_final_analysis.json",
+   "sha256": "a87f8df57ad387b8b2e845760791a90c67fbe1d51a01921c4137f88fbb763e80",
+   "bytes": 12903,
+   "sealed_source_sha256": "a87f8df57ad387b8b2e845760791a90c67fbe1d51a01921c4137f88fbb763e80",
+   "reason": "embeds provider physical-qubit layouts"
+  }
+ ]
+}

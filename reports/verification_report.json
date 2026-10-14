@@ -1,0 +1,743 @@
+{
+ "verifier": "qkrl verifier v2",
+ "evidence_dir_supplied": false,
+ "qiskit": "2.5.2",
+ "numpy": "2.5.4",
+ "tolerance": 1e-12,
+ "network_guard": "socket.connect disabled for the whole run",
+ "checks": [
+  {
+   "id": "C01",
+   "name": "feature-vector digests match manifest; 9 distinct vectors",
+   "status": "PASS",
+   "distinct_vectors": 9
+  },
+  {
+   "id": "C02",
+   "name": "exact kernel (numpy statevector) reproduces sealed K_exact",
+   "status": "PASS",
+   "max_abs_diff": 8.881784197001252e-16,
+   "K_exact": {
+    "P0": 1.0,
+    "P1": 0.999565673885468,
+    "P2": 0.0006150668453422791,
+    "P3": 0.5000036050798902,
+    "P4": 0.09477874495979387
+   }
+  },
+  {
+   "id": "C03",
+   "name": "Qiskit logical circuit P(all-zero) == K_exact",
+   "status": "PASS",
+   "max_abs_diff": 7.327471962526033e-15
+  },
+  {
+   "id": "C04",
+   "name": "rebuilt logical circuits byte-identical to sealed QASM3 (qiskit 2.5.2)",
+   "status": "PASS",
+   "byte_identical": {
+    "P0": true,
+    "P1": true,
+    "P2": true,
+    "P3": true,
+    "P4": true
+   },
+   "logical_ops": {
+    "ryy": 144,
+    "h": 36,
+    "rz": 36,
+    "measure": 9,
+    "barrier": 1
+   },
+   "qiskit": "2.5.2"
+  },
+  {
+   "id": "C05",
+   "name": "sealed IBM circuits: 660 CZ, depth 1668, 9 qubits, noiseless P(0)=K_exact",
+   "status": "PASS",
+   "per_pair": {
+    "P0": {
+     "cz": 660,
+     "depth": 1668,
+     "physical_qubits": [
+      68,
+      69,
+      70,
+      78,
+      89,
+      90,
+      91,
+      92,
+      93
+     ],
+     "noiseless_allzero": 0.999999999999956,
+     "abs_diff": 4.39648317751562e-14
+    },
+    "P1": {
+     "cz": 660,
+     "depth": 1668,
+     "physical_qubits": [
+      68,
+      69,
+      70,
+      78,
+      89,
+      90,
+      91,
+      92,
+      93
+     ],
+     "noiseless_allzero": 0.9995656738854254,
+     "abs_diff": 4.263256414560601e-14
+    },
+    "P2": {
+     "cz": 660,
+     "depth": 1668,
+     "physical_qubits": [
+      68,
+      69,
+      70,
+      78,
+      89,
+      90,
+      91,
+      92,
+      93
+     ],
+     "noiseless_allzero": 0.0006150668453423476,
+     "abs_diff": 6.852157730108388e-17
+    },
+    "P3": {
+     "cz": 660,
+     "depth": 1668,
+     "physical_qubits": [
+      68,
+      69,
+      70,
+      78,
+      89,
+      90,
+      91,
+      92,
+      93
+     ],
+     "noiseless_allzero": 0.5000036050798693,
+     "abs_diff": 2.0872192862952943e-14
+    },
+    "P4": {
+     "cz": 660,
+     "depth": 1668,
+     "physical_qubits": [
+      68,
+      69,
+      70,
+      78,
+      89,
+      90,
+      91,
+      92,
+      93
+     ],
+     "noiseless_allzero": 0.09477874495979,
+     "abs_diff": 3.8719027983802334e-15
+    }
+   }
+  },
+  {
+   "id": "C06",
+   "name": "frozen IBM transpilation re-run offline reproduces sealed bytes",
+   "status": "WITHHELD",
+   "reason": "needs the IBM coupling map (provider metadata), withheld from the public release"
+  },
+  {
+   "id": "C07",
+   "name": "raw IBM evidence: job id, backend, 20480 shots, PUB->artefact binding",
+   "status": "WITHHELD",
+   "reason": "raw IBM job output withheld from the public release; run with --evidence-dir to verify (see WITHHELD_EVIDENCE.md)"
+  },
+  {
+   "id": "C08",
+   "name": "kernel-contrast metrics recomputed from raw counts",
+   "status": "WITHHELD",
+   "reason": "raw IBM job output withheld from the public release; run with --evidence-dir to verify (see WITHHELD_EVIDENCE.md)"
+  },
+  {
+   "id": "C09",
+   "name": "offline-optimised artefacts are exact and have the recorded 2Q counts",
+   "status": "PASS",
+   "medians": {
+    "stock_transpiler_496": 496.0,
+    "exact_algebraic_382": 382.0,
+    "heavyhex_paritynet_300": 300.0,
+    "k9_paritynet_135": 135.0
+   },
+   "per_circuit": {
+    "heavyhex_stock_transpiler_best_P1": {
+     "two_qubit": 496,
+     "ops": {
+      "sx": 1112,
+      "rz": 784,
+      "cz": 496,
+      "x": 71,
+      "measure": 9,
+      "barrier": 1
+     },
+     "abs_diff": 8.43769498715119e-15,
+     "source": "ER-01B2 stock transpiler"
+    },
+    "heavyhex_stock_transpiler_best_P2": {
+     "two_qubit": 496,
+     "ops": {
+      "sx": 1103,
+      "rz": 784,
+      "cz": 496,
+      "x": 71,
+      "measure": 9,
+      "barrier": 1
+     },
+     "abs_diff": 4.7596475372113645e-17,
+     "source": "ER-01B2 stock transpiler"
+    },
+    "heavyhex_stock_transpiler_best_P3": {
+     "two_qubit": 496,
+     "ops": {
+      "sx": 1089,
+      "rz": 775,
+      "cz": 496,
+      "x": 74,
+      "measure": 9,
+      "barrier": 1
+     },
+     "abs_diff": 5.10702591327572e-15,
+     "source": "ER-01B2 stock transpiler"
+    },
+    "heavyhex_stock_transpiler_best_P4": {
+     "two_qubit": 496,
+     "ops": {
+      "sx": 1097,
+      "rz": 773,
+      "cz": 496,
+      "x": 73,
+      "measure": 9,
+      "barrier": 1
+     },
+     "abs_diff": 8.881784197001252e-16,
+     "source": "ER-01B2 stock transpiler"
+    },
+    "heavyhex_exact_algebraic_P1": {
+     "two_qubit": 495,
+     "ops": {
+      "sx": 915,
+      "rz": 775,
+      "cz": 495,
+      "x": 57,
+      "measure": 9,
+      "barrier": 1
+     },
+     "abs_diff": 8.881784197001252e-15,
+     "source": "ER-01B2 exact algebraic"
+    },
+    "heavyhex_exact_algebraic_P2": {
+     "two_qubit": 382,
+     "ops": {
+      "sx": 864,
+      "rz": 599,
+      "cz": 382,
+      "x": 58,
+      "measure": 9,
+      "barrier": 1
+     },
+     "abs_diff": 4.7379634937616544e-17,
+     "source": "ER-01B2 exact algebraic"
+    },
+    "heavyhex_exact_algebraic_P3": {
+     "two_qubit": 382,
+     "ops": {
+      "sx": 869,
+      "rz": 599,
+      "cz": 382,
+      "x": 59,
+      "measure": 9,
+      "barrier": 1
+     },
+     "abs_diff": 4.9960036108132044e-15,
+     "source": "ER-01B2 exact algebraic"
+    },
+    "heavyhex_exact_algebraic_P4": {
+     "two_qubit": 382,
+     "ops": {
+      "sx": 872,
+      "rz": 603,
+      "cz": 382,
+      "x": 52,
+      "measure": 9,
+      "barrier": 1
+     },
+     "abs_diff": 6.938893903907228e-16,
+     "source": "ER-01B2 exact algebraic"
+    },
+    "heavyhex_paritynet_P1": {
+     "two_qubit": 300,
+     "ops": {
+      "sx": 751,
+      "rz": 572,
+      "cz": 300,
+      "measure": 9,
+      "x": 8,
+      "barrier": 1
+     },
+     "abs_diff": 3.552713678800501e-15,
+     "source": "ER-01B2.1"
+    },
+    "heavyhex_paritynet_P2": {
+     "two_qubit": 300,
+     "ops": {
+      "sx": 747,
+      "rz": 567,
+      "cz": 300,
+      "x": 12,
+      "measure": 9,
+      "barrier": 1
+     },
+     "abs_diff": 8.370040771588094e-17,
+     "source": "ER-01B2.1"
+    },
+    "heavyhex_paritynet_P3": {
+     "two_qubit": 300,
+     "ops": {
+      "sx": 742,
+      "rz": 564,
+      "cz": 300,
+      "measure": 9,
+      "x": 8,
+      "barrier": 1
+     },
+     "abs_diff": 1.6653345369377348e-15,
+     "source": "ER-01B2.1"
+    },
+    "heavyhex_paritynet_P4": {
+     "two_qubit": 349,
+     "ops": {
+      "sx": 810,
+      "rz": 590,
+      "cz": 349,
+      "x": 54,
+      "measure": 9,
+      "barrier": 1
+     },
+     "abs_diff": 7.216449660063518e-16,
+     "source": "ER-01B2.1"
+    },
+    "k9_paritynet_P1": {
+     "two_qubit": 135,
+     "ops": {
+      "sx": 286,
+      "rz": 260,
+      "cz": 135,
+      "x": 16,
+      "measure": 9,
+      "barrier": 1
+     },
+     "abs_diff": 1.3322676295501878e-15,
+     "source": "ER-01B2.1 theoretical K9"
+    },
+    "k9_paritynet_P2": {
+     "two_qubit": 135,
+     "ops": {
+      "sx": 286,
+      "rz": 275,
+      "cz": 135,
+      "x": 13,
+      "measure": 9,
+      "barrier": 1
+     },
+     "abs_diff": 7.35089072945172e-17,
+     "source": "ER-01B2.1 theoretical K9"
+    },
+    "k9_paritynet_P3": {
+     "two_qubit": 135,
+     "ops": {
+      "sx": 286,
+      "rz": 269,
+      "cz": 135,
+      "x": 13,
+      "measure": 9,
+      "barrier": 1
+     },
+     "abs_diff": 2.3314683517128287e-15,
+     "source": "ER-01B2.1 theoretical K9"
+    },
+    "k9_paritynet_P4": {
+     "two_qubit": 135,
+     "ops": {
+      "rz": 454,
+      "sx": 286,
+      "cz": 135,
+      "measure": 9,
+      "barrier": 1
+     },
+     "abs_diff": 4.440892098500626e-16,
+     "source": "ER-01B2.1 theoretical K9"
+    }
+   }
+  },
+  {
+   "id": "C10",
+   "name": "exact layer fusion: 108 RYY for P1-P4, 0 for P0, kernel unchanged",
+   "status": "PASS",
+   "per_pair": {
+    "P0": {
+     "ryy": 0,
+     "abs_diff": 0.0
+    },
+    "P1": {
+     "ryy": 108,
+     "abs_diff": 6.661338147750939e-15
+    },
+    "P2": {
+     "ryy": 108,
+     "abs_diff": 6.938893903907228e-18
+    },
+    "P3": {
+     "ryy": 108,
+     "abs_diff": 4.551914400963142e-15
+    },
+    "P4": {
+     "ryy": 108,
+     "abs_diff": 4.85722573273506e-16
+    }
+   }
+  },
+  {
+   "id": "C11",
+   "name": "IonQ-native {GPI,GPI2,ZZ}: 144 ZZ (full depth) / 108 ZZ (fused), exact",
+   "status": "PASS",
+   "per_circuit": {
+    "A_full_depth_144:P0": {
+     "ops": {
+      "gpi2": 288,
+      "gpi": 144,
+      "zz": 144,
+      "measure": 9,
+      "barrier": 1
+     },
+     "zz": 144,
+     "zz_depth": 42,
+     "abs_diff": 5.551115123125783e-14,
+     "zz_turns_range": [
+      -0.2575097739470382,
+      0.2575097739470382
+     ]
+    },
+    "A_full_depth_144:P1": {
+     "ops": {
+      "gpi2": 288,
+      "gpi": 144,
+      "zz": 144,
+      "measure": 9,
+      "barrier": 1
+     },
+     "zz": 144,
+     "zz_depth": 42,
+     "abs_diff": 5.3179682879545e-14,
+     "zz_turns_range": [
+      -0.2918747553286485,
+      0.2925530197082521
+     ]
+    },
+    "A_full_depth_144:P2": {
+     "ops": {
+      "gpi2": 288,
+      "gpi": 144,
+      "zz": 144,
+      "measure": 9,
+      "barrier": 1
+     },
+     "zz": 144,
+     "zz_depth": 42,
+     "abs_diff": 8.348356728138384e-18,
+     "zz_turns_range": [
+      -0.2374743130745166,
+      0.3084947938668081
+     ]
+    },
+    "A_full_depth_144:P3": {
+     "ops": {
+      "gpi2": 288,
+      "gpi": 144,
+      "zz": 144,
+      "measure": 9,
+      "barrier": 1
+     },
+     "zz": 144,
+     "zz_depth": 42,
+     "abs_diff": 2.808864252301646e-14,
+     "zz_turns_range": [
+      -0.2874811620562083,
+      0.2904397991885842
+     ]
+    },
+    "A_full_depth_144:P4": {
+     "ops": {
+      "gpi2": 288,
+      "gpi": 144,
+      "zz": 144,
+      "measure": 9,
+      "barrier": 1
+     },
+     "zz": 144,
+     "zz_depth": 42,
+     "abs_diff": 5.065392549852277e-15,
+     "zz_turns_range": [
+      -0.3112881641624517,
+      0.2671151003767906
+     ]
+    },
+    "B_fused_108:P0": {
+     "ops": {
+      "measure": 9,
+      "barrier": 1
+     },
+     "zz": 0,
+     "zz_depth": 0,
+     "abs_diff": 0.0,
+     "zz_turns_range": null
+    },
+    "B_fused_108:P1": {
+     "ops": {
+      "gpi2": 288,
+      "gpi": 144,
+      "zz": 108,
+      "measure": 9,
+      "barrier": 1
+     },
+     "zz": 108,
+     "zz_depth": 33,
+     "abs_diff": 5.3179682879545e-14,
+     "zz_turns_range": [
+      -0.2918747553286485,
+      0.2925530197082521
+     ]
+    },
+    "B_fused_108:P2": {
+     "ops": {
+      "gpi2": 288,
+      "gpi": 144,
+      "zz": 108,
+      "measure": 9,
+      "barrier": 1
+     },
+     "zz": 108,
+     "zz_depth": 33,
+     "abs_diff": 4.7704895589362195e-18,
+     "zz_turns_range": [
+      -0.2374743130745166,
+      0.3084947938668081
+     ]
+    },
+    "B_fused_108:P3": {
+     "ops": {
+      "gpi2": 288,
+      "gpi": 144,
+      "zz": 108,
+      "measure": 9,
+      "barrier": 1
+     },
+     "zz": 108,
+     "zz_depth": 33,
+     "abs_diff": 2.864375403532904e-14,
+     "zz_turns_range": [
+      -0.2874811620562083,
+      0.2904397991885842
+     ]
+    },
+    "B_fused_108:P4": {
+     "ops": {
+      "gpi2": 288,
+      "gpi": 144,
+      "zz": 108,
+      "measure": 9,
+      "barrier": 1
+     },
+     "zz": 108,
+     "zz_depth": 33,
+     "abs_diff": 5.065392549852277e-15,
+     "zz_turns_range": [
+      -0.3112881641624517,
+      0.2671151003767906
+     ]
+    },
+    "A_full_depth_144_folded:P0": {
+     "ops": {
+      "gpi2": 352,
+      "gpi": 176,
+      "zz": 144,
+      "measure": 9,
+      "barrier": 1
+     },
+     "zz": 144,
+     "zz_depth": 42,
+     "abs_diff": 6.439293542825908e-14,
+     "zz_turns_range": [
+      -0.24676314582285985,
+      0.2467631458228598
+     ]
+    },
+    "A_full_depth_144_folded:P1": {
+     "ops": {
+      "gpi2": 384,
+      "gpi": 192,
+      "zz": 144,
+      "measure": 9,
+      "barrier": 1
+     },
+     "zz": 144,
+     "zz_depth": 42,
+     "abs_diff": 6.872280522429719e-14,
+     "zz_turns_range": [
+      -0.24798621281274072,
+      0.24900124666797396
+     ]
+    },
+    "A_full_depth_144_folded:P2": {
+     "ops": {
+      "gpi2": 576,
+      "gpi": 288,
+      "zz": 144,
+      "measure": 9,
+      "barrier": 1
+     },
+     "zz": 144,
+     "zz_depth": 42,
+     "abs_diff": 5.865533753146579e-17,
+     "zz_turns_range": [
+      -0.2374743130745166,
+      -0.15022457387551702
+     ]
+    },
+    "A_full_depth_144_folded:P3": {
+     "ops": {
+      "gpi2": 432,
+      "gpi": 216,
+      "zz": 144,
+      "measure": 9,
+      "barrier": 1
+     },
+     "zz": 144,
+     "zz_depth": 42,
+     "abs_diff": 4.1300296516055823e-14,
+     "zz_turns_range": [
+      -0.24807293360163474,
+      0.2476050748496128
+     ]
+    },
+    "A_full_depth_144_folded:P4": {
+     "ops": {
+      "gpi2": 408,
+      "gpi": 204,
+      "zz": 144,
+      "measure": 9,
+      "barrier": 1
+     },
+     "zz": 144,
+     "zz_depth": 42,
+     "abs_diff": 7.077671781985373e-15,
+     "zz_turns_range": [
+      -0.24661893965803539,
+      0.24451743810952697
+     ]
+    },
+    "B_fused_108_folded:P0": {
+     "ops": {
+      "measure": 9,
+      "barrier": 1
+     },
+     "zz": 0,
+     "zz_depth": 0,
+     "abs_diff": 0.0,
+     "zz_turns_range": null
+    },
+    "B_fused_108_folded:P1": {
+     "ops": {
+      "gpi2": 336,
+      "gpi": 168,
+      "zz": 108,
+      "measure": 9,
+      "barrier": 1
+     },
+     "zz": 108,
+     "zz_depth": 33,
+     "abs_diff": 6.117328865684613e-14,
+     "zz_turns_range": [
+      -0.24798621281274072,
+      0.24900124666797396
+     ]
+    },
+    "B_fused_108_folded:P2": {
+     "ops": {
+      "gpi2": 432,
+      "gpi": 216,
+      "zz": 108,
+      "measure": 9,
+      "barrier": 1
+     },
+     "zz": 108,
+     "zz_depth": 33,
+     "abs_diff": 3.61039323437673e-17,
+     "zz_turns_range": [
+      -0.2374743130745166,
+      0.14515282013546704
+     ]
+    },
+    "B_fused_108_folded:P3": {
+     "ops": {
+      "gpi2": 360,
+      "gpi": 180,
+      "zz": 108,
+      "measure": 9,
+      "barrier": 1
+     },
+     "zz": 108,
+     "zz_depth": 33,
+     "abs_diff": 3.4861002973229915e-14,
+     "zz_turns_range": [
+      -0.24807293360163474,
+      0.2476050748496128
+     ]
+    },
+    "B_fused_108_folded:P4": {
+     "ops": {
+      "gpi2": 348,
+      "gpi": 174,
+      "zz": 108,
+      "measure": 9,
+      "barrier": 1
+     },
+     "zz": 108,
+     "zz_depth": 33,
+     "abs_diff": 5.953570969552402e-15,
+     "zz_turns_range": [
+      -0.24661893965803539,
+      0.24451743810952697
+     ]
+    }
+   },
+   "stock_transpile_of_historical_circuit": {
+    "ops": {
+     "gpi2": 3888,
+     "gpi": 1944,
+     "zz": 288,
+     "measure": 9,
+     "barrier": 1
+    },
+    "zz": 288
+   }
+  }
+ ],
+ "summary": {
+  "PASS": 8,
+  "FAIL": 0,
+  "VERSION_DEPENDENT": 0,
+  "WITHHELD": 3
+ }
+}

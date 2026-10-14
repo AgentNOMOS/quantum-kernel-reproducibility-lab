@@ -1,0 +1,1023 @@
+{
+ "conventions": {
+  "zz_qiskit_ionq_vs_doc_matrix": 0.0,
+  "zz_doc_vs_expm(-i*pi*t*ZZ)": 0.0,
+  "zz_doc_vs_qiskit_RZZ(2*pi*t)_radians": 0.0,
+  "WRONG_reading_exp(-i*2pi*t*ZZ)_max_diff": 1.3707815713822842,
+  "WRONG_reading_exp(-i*t*ZZ)_radians_max_diff": 0.9846721708881728,
+  "gpi_qiskit_ionq_vs_doc": 0.0,
+  "gpi2_qiskit_ionq_vs_doc": 0.0,
+  "gpi_period_1_turn": 1.1430445635548515e-15,
+  "fold_identity_max_phase_dist": 1.6910413304902302e-15
+ },
+ "constructions": {
+  "A_full_depth:P0": {
+   "zz_pre": 144,
+   "zz_post": 144,
+   "zz_multiset_preserved": true,
+   "unitary_phase_dist_pre": 6.898413241717596e-15,
+   "unitary_phase_dist_post": 2.476800653627977e-14,
+   "zz_angle_range_turns": [
+    -0.257509773947,
+    0.257509773947
+   ],
+   "z_compensations": 0,
+   "pass": true
+  },
+  "A_full_depth:P1": {
+   "zz_pre": 144,
+   "zz_post": 144,
+   "zz_multiset_preserved": true,
+   "unitary_phase_dist_pre": 7.221567754146507e-15,
+   "unitary_phase_dist_post": 2.4338365369975586e-14,
+   "zz_angle_range_turns": [
+    -0.291874755329,
+    0.292553019708
+   ],
+   "z_compensations": 0,
+   "pass": true
+  },
+  "A_full_depth:P2": {
+   "zz_pre": 144,
+   "zz_post": 144,
+   "zz_multiset_preserved": true,
+   "unitary_phase_dist_pre": 3.0952133876939516e-15,
+   "unitary_phase_dist_post": 1.0880752066901083e-14,
+   "zz_angle_range_turns": [
+    -0.237474313075,
+    0.308494793867
+   ],
+   "z_compensations": 0,
+   "pass": true
+  },
+  "A_full_depth:P3": {
+   "zz_pre": 144,
+   "zz_post": 144,
+   "zz_multiset_preserved": true,
+   "unitary_phase_dist_pre": 5.33125033959778e-15,
+   "unitary_phase_dist_post": 1.8331686043796682e-14,
+   "zz_angle_range_turns": [
+    -0.287481162056,
+    0.290439799189
+   ],
+   "z_compensations": 0,
+   "pass": true
+  },
+  "A_full_depth:P4": {
+   "zz_pre": 144,
+   "zz_post": 144,
+   "zz_multiset_preserved": true,
+   "unitary_phase_dist_pre": 2.7251396047830617e-15,
+   "unitary_phase_dist_post": 9.504248346062298e-15,
+   "zz_angle_range_turns": [
+    -0.311288164162,
+    0.267115100377
+   ],
+   "z_compensations": 0,
+   "pass": true
+  },
+  "B_fused:P0": {
+   "zz_pre": 0,
+   "zz_post": 0,
+   "zz_multiset_preserved": true,
+   "unitary_phase_dist_pre": 4.231894840025568e-15,
+   "unitary_phase_dist_post": 4.231894840025568e-15,
+   "zz_angle_range_turns": null,
+   "z_compensations": 0,
+   "pass": true
+  },
+  "B_fused:P1": {
+   "zz_pre": 108,
+   "zz_post": 108,
+   "zz_multiset_preserved": true,
+   "unitary_phase_dist_pre": 5.775730506987213e-15,
+   "unitary_phase_dist_post": 2.4244882199705882e-14,
+   "zz_angle_range_turns": [
+    -0.291874755329,
+    0.292553019708
+   ],
+   "z_compensations": 0,
+   "pass": true
+  },
+  "B_fused:P2": {
+   "zz_pre": 108,
+   "zz_post": 108,
+   "zz_multiset_preserved": true,
+   "unitary_phase_dist_pre": 2.3420180361420893e-15,
+   "unitary_phase_dist_post": 1.121438607309864e-14,
+   "zz_angle_range_turns": [
+    -0.237474313075,
+    0.308494793867
+   ],
+   "z_compensations": 0,
+   "pass": true
+  },
+  "B_fused:P3": {
+   "zz_pre": 108,
+   "zz_post": 108,
+   "zz_multiset_preserved": true,
+   "unitary_phase_dist_pre": 4.4422905202998245e-15,
+   "unitary_phase_dist_post": 1.8511978741597196e-14,
+   "zz_angle_range_turns": [
+    -0.287481162056,
+    0.290439799189
+   ],
+   "z_compensations": 0,
+   "pass": true
+  },
+  "B_fused:P4": {
+   "zz_pre": 108,
+   "zz_post": 108,
+   "zz_multiset_preserved": true,
+   "unitary_phase_dist_pre": 1.942890293094024e-15,
+   "unitary_phase_dist_post": 9.387951626583454e-15,
+   "zz_angle_range_turns": [
+    -0.311288164162,
+    0.267115100377
+   ],
+   "z_compensations": 0,
+   "pass": true
+  },
+  "A_full_depth_folded:P0": {
+   "zz_pre": 144,
+   "zz_post": 144,
+   "zz_multiset_preserved": true,
+   "unitary_phase_dist_pre": 6.4547829566824184e-15,
+   "unitary_phase_dist_post": 2.9739864345897906e-14,
+   "zz_angle_range_turns": [
+    -0.246763145823,
+    0.246763145823
+   ],
+   "z_compensations": 32,
+   "pass": true
+  },
+  "A_full_depth_folded:P1": {
+   "zz_pre": 144,
+   "zz_post": 144,
+   "zz_multiset_preserved": true,
+   "unitary_phase_dist_pre": 6.664937418323811e-15,
+   "unitary_phase_dist_post": 3.2006406436265694e-14,
+   "zz_angle_range_turns": [
+    -0.247986212813,
+    0.249001246668
+   ],
+   "z_compensations": 48,
+   "pass": true
+  },
+  "A_full_depth_folded:P2": {
+   "zz_pre": 144,
+   "zz_post": 144,
+   "zz_multiset_preserved": true,
+   "unitary_phase_dist_pre": 3.465781279474271e-15,
+   "unitary_phase_dist_post": 2.389092912867503e-14,
+   "zz_angle_range_turns": [
+    -0.237474313075,
+    -0.150224573876
+   ],
+   "z_compensations": 144,
+   "pass": true
+  },
+  "A_full_depth_folded:P3": {
+   "zz_pre": 144,
+   "zz_post": 144,
+   "zz_multiset_preserved": true,
+   "unitary_phase_dist_pre": 5.773775915708383e-15,
+   "unitary_phase_dist_post": 2.7557253070009465e-14,
+   "zz_angle_range_turns": [
+    -0.248072933602,
+    0.24760507485
+   ],
+   "z_compensations": 72,
+   "pass": true
+  },
+  "A_full_depth_folded:P4": {
+   "zz_pre": 144,
+   "zz_post": 144,
+   "zz_multiset_preserved": true,
+   "unitary_phase_dist_pre": 2.7560601772572486e-15,
+   "unitary_phase_dist_post": 1.3397981761467785e-14,
+   "zz_angle_range_turns": [
+    -0.246618939658,
+    0.24451743811
+   ],
+   "z_compensations": 60,
+   "pass": true
+  },
+  "B_fused_folded:P0": {
+   "zz_pre": 0,
+   "zz_post": 0,
+   "zz_multiset_preserved": true,
+   "unitary_phase_dist_pre": 4.231894840025568e-15,
+   "unitary_phase_dist_post": 4.231894840025568e-15,
+   "zz_angle_range_turns": null,
+   "z_compensations": 0,
+   "pass": true
+  },
+  "B_fused_folded:P1": {
+   "zz_pre": 108,
+   "zz_post": 108,
+   "zz_multiset_preserved": true,
+   "unitary_phase_dist_pre": 5.333574489990666e-15,
+   "unitary_phase_dist_post": 2.8212492397044943e-14,
+   "zz_angle_range_turns": [
+    -0.247986212813,
+    0.249001246668
+   ],
+   "z_compensations": 24,
+   "pass": true
+  },
+  "B_fused_folded:P2": {
+   "zz_pre": 108,
+   "zz_post": 108,
+   "zz_multiset_preserved": true,
+   "unitary_phase_dist_pre": 2.618455766672135e-15,
+   "unitary_phase_dist_post": 1.761056277254345e-14,
+   "zz_angle_range_turns": [
+    -0.237474313075,
+    0.145152820135
+   ],
+   "z_compensations": 72,
+   "pass": true
+  },
+  "B_fused_folded:P3": {
+   "zz_pre": 108,
+   "zz_post": 108,
+   "zz_multiset_preserved": true,
+   "unitary_phase_dist_pre": 4.552277087055125e-15,
+   "unitary_phase_dist_post": 2.2985140258554753e-14,
+   "zz_angle_range_turns": [
+    -0.248072933602,
+    0.24760507485
+   ],
+   "z_compensations": 36,
+   "pass": true
+  },
+  "B_fused_folded:P4": {
+   "zz_pre": 108,
+   "zz_post": 108,
+   "zz_multiset_preserved": true,
+   "unitary_phase_dist_pre": 1.942890293094024e-15,
+   "unitary_phase_dist_post": 1.1427884281743525e-14,
+   "zz_angle_range_turns": [
+    -0.246618939658,
+    0.24451743811
+   ],
+   "z_compensations": 30,
+   "pass": true
+  }
+ },
+ "payloads": {
+  "experiments/ionq_native_payloads/A_full_depth_P0.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 2.965423864121514e-14,
+   "n_zz": 144,
+   "n_1q": 528,
+   "phase_range": [
+    -0.25,
+    0.7693045127497646
+   ],
+   "angle_range": [
+    -0.24676314582285985,
+    0.2467631458228598
+   ],
+   "P_allzero": 0.9999999999999347,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": true,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/A_full_depth_P1.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 3.243879427419812e-14,
+   "n_zz": 144,
+   "n_1q": 576,
+   "phase_range": [
+    -0.25,
+    0.773071794655674
+   ],
+   "angle_range": [
+    -0.24798621281274072,
+    0.24900124666797396
+   ],
+   "P_allzero": 0.9995656738853993,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": true,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/A_full_depth_P2.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 2.406041825080547e-14,
+   "n_zz": 144,
+   "n_1q": 864,
+   "phase_range": [
+    -0.25,
+    0.780891666852773
+   ],
+   "angle_range": [
+    -0.2374743130745166,
+    -0.15022457387551702
+   ],
+   "P_allzero": 0.0006150668453422195,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": true,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/A_full_depth_P3.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 2.7562458114612393e-14,
+   "n_zz": 144,
+   "n_1q": 648,
+   "phase_range": [
+    -0.25,
+    0.7701462557767031
+   ],
+   "angle_range": [
+    -0.24807293360163474,
+    0.2476050748496128
+   ],
+   "P_allzero": 0.5000036050798492,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": true,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/A_full_depth_P4.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 1.3443128743028234e-14,
+   "n_zz": 144,
+   "n_1q": 612,
+   "phase_range": [
+    -0.25,
+    0.7817880286257745
+   ],
+   "angle_range": [
+    -0.24661893965803539,
+    0.24451743810952697
+   ],
+   "P_allzero": 0.09477874495978672,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": true,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/A_full_depth_reordered_P0.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 2.959040815784307e-14,
+   "n_zz": 144,
+   "n_1q": 528,
+   "phase_range": [
+    -0.25,
+    0.7693045127497646
+   ],
+   "angle_range": [
+    -0.24676314582285985,
+    0.2467631458228598
+   ],
+   "P_allzero": 0.9999999999999352,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": true,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/A_full_depth_reordered_P1.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 3.223958638470687e-14,
+   "n_zz": 144,
+   "n_1q": 576,
+   "phase_range": [
+    -0.25,
+    0.773071794655674
+   ],
+   "angle_range": [
+    -0.24798621281274072,
+    0.24900124666797396
+   ],
+   "P_allzero": 0.999565673885398,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": true,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/A_full_depth_reordered_P2.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 2.410756692397875e-14,
+   "n_zz": 144,
+   "n_1q": 864,
+   "phase_range": [
+    -0.25,
+    0.780891666852773
+   ],
+   "angle_range": [
+    -0.2374743130745166,
+    -0.15022457387551702
+   ],
+   "P_allzero": 0.0006150668453422168,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": true,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/A_full_depth_reordered_P3.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 2.7599230650281385e-14,
+   "n_zz": 144,
+   "n_1q": 648,
+   "phase_range": [
+    -0.25,
+    0.7701462557767031
+   ],
+   "angle_range": [
+    -0.24807293360163474,
+    0.2476050748496128
+   ],
+   "P_allzero": 0.5000036050798491,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": true,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/A_full_depth_reordered_P4.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 1.3524828067595199e-14,
+   "n_zz": 144,
+   "n_1q": 612,
+   "phase_range": [
+    -0.25,
+    0.7817880286257745
+   ],
+   "angle_range": [
+    -0.24661893965803539,
+    0.24451743810952697
+   ],
+   "P_allzero": 0.09477874495978679,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": true,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/B_fused_P1.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 2.831771414490372e-14,
+   "n_zz": 108,
+   "n_1q": 504,
+   "phase_range": [
+    -0.25,
+    0.773071794655674
+   ],
+   "angle_range": [
+    -0.24798621281274072,
+    0.24900124666797396
+   ],
+   "P_allzero": 0.9995656738854071,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": true,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/B_fused_P2.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 1.7576096354984875e-14,
+   "n_zz": 108,
+   "n_1q": 648,
+   "phase_range": [
+    -0.25,
+    0.780891666852773
+   ],
+   "angle_range": [
+    -0.2374743130745166,
+    0.14515282013546704
+   ],
+   "P_allzero": 0.0006150668453422404,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": true,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/B_fused_P3.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 2.299494440946282e-14,
+   "n_zz": 108,
+   "n_1q": 540,
+   "phase_range": [
+    -0.25,
+    0.7701462557767031
+   ],
+   "angle_range": [
+    -0.24807293360163474,
+    0.2476050748496128
+   ],
+   "P_allzero": 0.5000036050798549,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": true,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/B_fused_P4.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 1.1133411481696097e-14,
+   "n_zz": 108,
+   "n_1q": 522,
+   "phase_range": [
+    -0.25,
+    0.7817880286257745
+   ],
+   "angle_range": [
+    -0.24661893965803539,
+    0.24451743810952697
+   ],
+   "P_allzero": 0.09477874495978778,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": true,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/C_spam_P0_fused.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 4.231894840025568e-15,
+   "n_zz": 0,
+   "n_1q": 0,
+   "phase_range": null,
+   "angle_range": null,
+   "P_allzero": 1.0,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": true,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/D_half_depth_P0.json": {
+   "compared_with": "self-mirror: |<0|U|0>| = 1",
+   "phase_dist": 1.3100631690576847e-14,
+   "n_zz": 72,
+   "n_1q": 210,
+   "phase_range": [
+    -0.25,
+    0.7693045127497646
+   ],
+   "angle_range": [
+    -0.24676314582285985,
+    0.2467631458228598
+   ],
+   "P_allzero": 0.9999999999999738,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": true,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/E_stock_fixed_angle_P0.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 3.634924276741653e-13,
+   "n_zz": 288,
+   "n_1q": 5832,
+   "phase_range": [
+    -0.375,
+    0.7575097739470382
+   ],
+   "angle_range": [
+    0.25,
+    0.25
+   ],
+   "P_allzero": 0.999999999999273,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": true,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/E_stock_fixed_angle_P1.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 3.6371051969541526e-13,
+   "n_zz": 288,
+   "n_1q": 5832,
+   "phase_range": [
+    -0.375,
+    0.7918747553286485
+   ],
+   "angle_range": [
+    0.25,
+    0.25
+   ],
+   "P_allzero": 0.9995656738847386,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": true,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/E_stock_fixed_angle_P2.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 1.8583465369969137e-13,
+   "n_zz": 288,
+   "n_1q": 5832,
+   "phase_range": [
+    -0.375,
+    0.75
+   ],
+   "angle_range": [
+    0.25,
+    0.25
+   ],
+   "P_allzero": 0.000615066845341828,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": true,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/E_stock_fixed_angle_P3.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 2.631254719123024e-13,
+   "n_zz": 288,
+   "n_1q": 5832,
+   "phase_range": [
+    -0.375,
+    0.7874811620562083
+   ],
+   "angle_range": [
+    0.25,
+    0.25
+   ],
+   "P_allzero": 0.500003605079525,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": true,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/E_stock_fixed_angle_P4.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 1.4408919131115105e-13,
+   "n_zz": 288,
+   "n_1q": 5832,
+   "phase_range": [
+    -0.375,
+    0.8112881641624516
+   ],
+   "angle_range": [
+    0.25,
+    0.25
+   ],
+   "P_allzero": 0.09477874495972478,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": true,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/unfolded/A_full_depth_P0.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 2.4695379894425335e-14,
+   "n_zz": 144,
+   "n_1q": 432,
+   "phase_range": [
+    -0.13465225637488232,
+    0.7693045127497646
+   ],
+   "angle_range": [
+    -0.2575097739470382,
+    0.2575097739470382
+   ],
+   "P_allzero": 0.9999999999999445,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": false,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/unfolded/A_full_depth_P1.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 2.4406022710532126e-14,
+   "n_zz": 144,
+   "n_1q": 432,
+   "phase_range": [
+    -0.13664654734102863,
+    0.773071794655674
+   ],
+   "angle_range": [
+    -0.2918747553286485,
+    0.2925530197082521
+   ],
+   "P_allzero": 0.9995656738854144,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": false,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/unfolded/A_full_depth_P2.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 1.0921034273181857e-14,
+   "n_zz": 144,
+   "n_1q": 432,
+   "phase_range": [
+    -0.12920199309018449,
+    0.780891666852773
+   ],
+   "angle_range": [
+    -0.2374743130745166,
+    0.3084947938668081
+   ],
+   "P_allzero": 0.0006150668453422693,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": false,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/unfolded/A_full_depth_P3.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 1.8222499010985877e-14,
+   "n_zz": 144,
+   "n_1q": 432,
+   "phase_range": [
+    -0.13586675412986213,
+    0.7701462557767031
+   ],
+   "angle_range": [
+    -0.2874811620562083,
+    0.2904397991885842
+   ],
+   "P_allzero": 0.500003605079862,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": false,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/unfolded/A_full_depth_P4.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 9.300230329105216e-15,
+   "n_zz": 144,
+   "n_1q": 432,
+   "phase_range": [
+    -0.14074598703810012,
+    0.7817880286257745
+   ],
+   "angle_range": [
+    -0.3112881641624517,
+    0.2671151003767906
+   ],
+   "P_allzero": 0.0947787449597886,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": false,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/unfolded/A_full_depth_reordered_P0.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 2.474484417959653e-14,
+   "n_zz": 144,
+   "n_1q": 432,
+   "phase_range": [
+    -0.13465225637488232,
+    0.7693045127497646
+   ],
+   "angle_range": [
+    -0.2575097739470382,
+    0.2575097739470382
+   ],
+   "P_allzero": 0.9999999999999449,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": false,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/unfolded/A_full_depth_reordered_P1.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 2.4465066628858e-14,
+   "n_zz": 144,
+   "n_1q": 432,
+   "phase_range": [
+    -0.13664654734102863,
+    0.773071794655674
+   ],
+   "angle_range": [
+    -0.2918747553286485,
+    0.2925530197082521
+   ],
+   "P_allzero": 0.9995656738854157,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": false,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/unfolded/A_full_depth_reordered_P2.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 1.1074022502904992e-14,
+   "n_zz": 144,
+   "n_1q": 432,
+   "phase_range": [
+    -0.12920199309018449,
+    0.780891666852773
+   ],
+   "angle_range": [
+    -0.2374743130745166,
+    0.3084947938668081
+   ],
+   "P_allzero": 0.0006150668453422675,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": false,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/unfolded/A_full_depth_reordered_P3.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 1.7932138911777392e-14,
+   "n_zz": 144,
+   "n_1q": 432,
+   "phase_range": [
+    -0.13586675412986213,
+    0.7701462557767031
+   ],
+   "angle_range": [
+    -0.2874811620562083,
+    0.2904397991885842
+   ],
+   "P_allzero": 0.5000036050798621,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": false,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/unfolded/A_full_depth_reordered_P4.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 9.268409187528922e-15,
+   "n_zz": 144,
+   "n_1q": 432,
+   "phase_range": [
+    -0.14074598703810012,
+    0.7817880286257745
+   ],
+   "angle_range": [
+    -0.3112881641624517,
+    0.2671151003767906
+   ],
+   "P_allzero": 0.09477874495978873,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": false,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/unfolded/B_fused_P1.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 2.4548274842461475e-14,
+   "n_zz": 108,
+   "n_1q": 432,
+   "phase_range": [
+    -0.13664654734102863,
+    0.773071794655674
+   ],
+   "angle_range": [
+    -0.2918747553286485,
+    0.2925530197082521
+   ],
+   "P_allzero": 0.9995656738854148,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": false,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/unfolded/B_fused_P2.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 1.0921034273181857e-14,
+   "n_zz": 108,
+   "n_1q": 432,
+   "phase_range": [
+    -0.12920199309018449,
+    0.780891666852773
+   ],
+   "angle_range": [
+    -0.2374743130745166,
+    0.3084947938668081
+   ],
+   "P_allzero": 0.0006150668453422679,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": false,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/unfolded/B_fused_P3.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 1.82214760205536e-14,
+   "n_zz": 108,
+   "n_1q": 432,
+   "phase_range": [
+    -0.13586675412986213,
+    0.7701462557767031
+   ],
+   "angle_range": [
+    -0.2874811620562083,
+    0.2904397991885842
+   ],
+   "P_allzero": 0.5000036050798612,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": false,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/unfolded/B_fused_P4.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 9.222539201324241e-15,
+   "n_zz": 108,
+   "n_1q": 432,
+   "phase_range": [
+    -0.14074598703810012,
+    0.7817880286257745
+   ],
+   "angle_range": [
+    -0.3112881641624517,
+    0.2671151003767906
+   ],
+   "P_allzero": 0.09477874495978866,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": false,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/unfolded/C_spam_P0_fused.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 4.231894840025568e-15,
+   "n_zz": 0,
+   "n_1q": 0,
+   "phase_range": null,
+   "angle_range": null,
+   "P_allzero": 1.0,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": true,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/unfolded/D_half_depth_P0.json": {
+   "compared_with": "self-mirror: |<0|U|0>| = 1",
+   "phase_dist": 1.0769163338864018e-14,
+   "n_zz": 72,
+   "n_1q": 162,
+   "phase_range": [
+    -0.13465225637488232,
+    0.7693045127497646
+   ],
+   "angle_range": [
+    -0.2575097739470382,
+    0.2575097739470382
+   ],
+   "P_allzero": 0.9999999999999785,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": false,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/unfolded/E_stock_fixed_angle_P0.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 3.634924276741653e-13,
+   "n_zz": 288,
+   "n_1q": 5832,
+   "phase_range": [
+    -0.375,
+    0.7575097739470382
+   ],
+   "angle_range": [
+    0.25,
+    0.25
+   ],
+   "P_allzero": 0.999999999999273,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": true,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/unfolded/E_stock_fixed_angle_P1.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 3.6371051969541526e-13,
+   "n_zz": 288,
+   "n_1q": 5832,
+   "phase_range": [
+    -0.375,
+    0.7918747553286485
+   ],
+   "angle_range": [
+    0.25,
+    0.25
+   ],
+   "P_allzero": 0.9995656738847386,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": true,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/unfolded/E_stock_fixed_angle_P2.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 1.8583465369969137e-13,
+   "n_zz": 288,
+   "n_1q": 5832,
+   "phase_range": [
+    -0.375,
+    0.75
+   ],
+   "angle_range": [
+    0.25,
+    0.25
+   ],
+   "P_allzero": 0.000615066845341828,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": true,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/unfolded/E_stock_fixed_angle_P3.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 2.631254719123024e-13,
+   "n_zz": 288,
+   "n_1q": 5832,
+   "phase_range": [
+    -0.375,
+    0.7874811620562083
+   ],
+   "angle_range": [
+    0.25,
+    0.25
+   ],
+   "P_allzero": 0.500003605079525,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": true,
+   "pass": true
+  },
+  "experiments/ionq_native_payloads/unfolded/E_stock_fixed_angle_P4.json": {
+   "compared_with": "historical logical unitary",
+   "phase_dist": 1.4408919131115105e-13,
+   "n_zz": 288,
+   "n_1q": 5832,
+   "phase_range": [
+    -0.375,
+    0.8112881641624516
+   ],
+   "angle_range": [
+    0.25,
+    0.25
+   ],
+   "P_allzero": 0.09477874495972478,
+   "phases_within_documented_-1_to_1": true,
+   "zz_angles_within_quarter_turn": true,
+   "pass": true
+  }
+ },
+ "unresolved_hardware_restrictions": [
+  "ZZ angle range: not documented (MS documents 0..0.25 turns; nothing for ZZ). Folded payloads stay within +/-0.25.",
+  "Negative ZZ angles: not documented as accepted or rejected. Folded payloads still contain negative angles; an exact rewrite to non-negative angles is possible (ZZ(-t) = ZZ(1/2 - t).(Z(x)Z) up to global phase) but is not applied.",
+  "ZZ angle precision/resolution: not documented (MS: ~3 decimal places stated).",
+  "Gate parallelism, physical pulse implementation, max gates per circuit: not documented.",
+  "Whether the access path offered by Qollab (IonQ cloud direct, AWS Braket, Azure, other) accepts Forte native ZZ: unverified."
+ ],
+ "verdict": "PASS"
+}

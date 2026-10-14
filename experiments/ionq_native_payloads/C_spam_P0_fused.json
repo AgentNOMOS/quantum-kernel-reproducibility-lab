@@ -1,0 +1,7 @@
+{
+"format": "IonQ native-gate circuit (gateset=native), generated locally, NEVER SUBMITTED",
+"variant": "folded: all ZZ angles in [-1/4, 1/4] turns (primary)",
+"gateset": "native",
+"qubits": 9,
+"circuit": []
+}

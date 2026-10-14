@@ -1,0 +1,242 @@
+{
+ "packages_scanned": {
+  "qiskit": 699,
+  "qiskit_ionq": 15,
+  "qiskit_qasm3_import": 8,
+  "numpy": 407,
+  "scipy": 988,
+  "_pytest": 78
+ },
+ "positive_control_detected": true,
+ "controls": {
+  "verbatim": {
+   "exact": {
+    "shingles": 18018,
+    "matched": 18018,
+    "fraction": 1.0,
+    "example": "qiskit:circuit/quantumcircuit.py"
+   },
+   "renamed": {
+    "shingles": 16980,
+    "matched": 16980,
+    "fraction": 1.0,
+    "example": "qiskit:circuit/quantumcircuit.py"
+   }
+  },
+  "renamed": {
+   "exact": {
+    "shingles": 18018,
+    "matched": 13,
+    "fraction": 0.0007,
+    "example": "qiskit:circuit/quantumcircuit.py"
+   },
+   "renamed": {
+    "shingles": 16980,
+    "matched": 16980,
+    "fraction": 1.0,
+    "example": "qiskit:circuit/quantumcircuit.py"
+   }
+  }
+ },
+ "files": {
+  "reference/build_reference.py": {
+   "exact": {
+    "shingles": 288,
+    "matched": 0,
+    "fraction": 0.0,
+    "example": null
+   },
+   "renamed": {
+    "shingles": 268,
+    "matched": 0,
+    "fraction": 0.0,
+    "example": null
+   }
+  },
+  "qkrl/__init__.py": {
+   "exact": {
+    "shingles": 14,
+    "matched": 0,
+    "fraction": 0.0,
+    "example": null
+   },
+   "renamed": {
+    "shingles": 0,
+    "matched": 0,
+    "fraction": 0.0,
+    "example": null
+   }
+  },
+  "qkrl/circuits.py": {
+   "exact": {
+    "shingles": 1122,
+    "matched": 0,
+    "fraction": 0.0,
+    "example": null
+   },
+   "renamed": {
+    "shingles": 1128,
+    "matched": 0,
+    "fraction": 0.0,
+    "example": null
+   }
+  },
+  "qkrl/feature_map.py": {
+   "exact": {
+    "shingles": 627,
+    "matched": 0,
+    "fraction": 0.0,
+    "example": null
+   },
+   "renamed": {
+    "shingles": 615,
+    "matched": 0,
+    "fraction": 0.0,
+    "example": null
+   }
+  },
+  "qkrl/ionq_compile.py": {
+   "exact": {
+    "shingles": 112,
+    "matched": 0,
+    "fraction": 0.0,
+    "example": null
+   },
+   "renamed": {
+    "shingles": 92,
+    "matched": 0,
+    "fraction": 0.0,
+    "example": null
+   }
+  },
+  "qkrl/metrics.py": {
+   "exact": {
+    "shingles": 771,
+    "matched": 0,
+    "fraction": 0.0,
+    "example": null
+   },
+   "renamed": {
+    "shingles": 751,
+    "matched": 0,
+    "fraction": 0.0,
+    "example": null
+   }
+  },
+  "experiments/build_ionq_plan.py": {
+   "exact": {
+    "shingles": 1375,
+    "matched": 0,
+    "fraction": 0.0,
+    "example": null
+   },
+   "renamed": {
+    "shingles": 1357,
+    "matched": 0,
+    "fraction": 0.0,
+    "example": null
+   }
+  },
+  "experiments/power_analysis.py": {
+   "exact": {
+    "shingles": 365,
+    "matched": 0,
+    "fraction": 0.0,
+    "example": null
+   },
+   "renamed": {
+    "shingles": 345,
+    "matched": 0,
+    "fraction": 0.0,
+    "example": null
+   }
+  },
+  "verifier/audit_ionq_native.py": {
+   "exact": {
+    "shingles": 2085,
+    "matched": 0,
+    "fraction": 0.0,
+    "example": null
+   },
+   "renamed": {
+    "shingles": 2048,
+    "matched": 0,
+    "fraction": 0.0,
+    "example": null
+   }
+  },
+  "verifier/upstream_similarity.py": {
+   "exact": {
+    "shingles": 996,
+    "matched": 0,
+    "fraction": 0.0,
+    "example": null
+   },
+   "renamed": {
+    "shingles": 976,
+    "matched": 0,
+    "fraction": 0.0,
+    "example": null
+   }
+  },
+  "verifier/verify.py": {
+   "exact": {
+    "shingles": 2769,
+    "matched": 0,
+    "fraction": 0.0,
+    "example": null
+   },
+   "renamed": {
+    "shingles": 2767,
+    "matched": 0,
+    "fraction": 0.0,
+    "example": null
+   }
+  },
+  "tests/conftest.py": {
+   "exact": {
+    "shingles": 42,
+    "matched": 0,
+    "fraction": 0.0,
+    "example": null
+   },
+   "renamed": {
+    "shingles": 22,
+    "matched": 0,
+    "fraction": 0.0,
+    "example": null
+   }
+  },
+  "tests/test_metrics_and_native.py": {
+   "exact": {
+    "shingles": 467,
+    "matched": 0,
+    "fraction": 0.0,
+    "example": null
+   },
+   "renamed": {
+    "shingles": 449,
+    "matched": 0,
+    "fraction": 0.0,
+    "example": null
+   }
+  },
+  "tests/test_reproduction.py": {
+   "exact": {
+    "shingles": 863,
+    "matched": 0,
+    "fraction": 0.0,
+    "example": null
+   },
+   "renamed": {
+    "shingles": 843,
+    "matched": 0,
+    "fraction": 0.0,
+    "example": null
+   }
+  }
+ },
+ "max_fraction": 0.0,
+ "verdict": "PASS",
+ "limitation": "Only installed packages are compared; tutorials, blogs and other repositories are not covered."
+}

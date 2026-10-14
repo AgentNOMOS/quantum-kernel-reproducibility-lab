@@ -1,0 +1,425 @@
+{
+ "backend_family": "IonQ Forte (native 2Q gate ZZ, arbitrary angle, all-to-all)",
+ "qubits": 9,
+ "pricing": {
+  "aws_braket_ionq_forte": {
+   "per_task": 0.3,
+   "per_shot": 0.08,
+   "source": "https://aws.amazon.com/braket/pricing/ (retrieved 2026-10-14)"
+  },
+  "azure_quantum_ionq_forte1": {
+   "per_1q_gate_shot": 0.0001645,
+   "per_2q_gate_shot": 0.001121,
+   "min_per_program_em_off": 25.7899,
+   "min_per_program_em_on": 168.195,
+   "source": "https://learn.microsoft.com/en-us/azure/quantum/pricing (updated 2026-04-23, retrieved 2026-10-14)"
+  }
+ },
+ "circuits": {
+  "A_full_depth_P0": {
+   "role": "primary: same logical circuit as the IBM run, arbitrary-angle ZZ, 144 ZZ",
+   "K_exact": 1.0,
+   "native_ops": {
+    "gpi2": 352,
+    "gpi": 176,
+    "zz": 144,
+    "measure": 9,
+    "barrier": 1
+   },
+   "n_2q": 144,
+   "n_1q": 528,
+   "zz_depth": 42,
+   "ideal_allzero": 0.9999999999999356
+  },
+  "A_full_depth_reordered_P0": {
+   "role": "optional control: A with ZZ order permuted inside commuting blocks (exact)",
+   "K_exact": 1.0,
+   "native_ops": {
+    "gpi2": 352,
+    "gpi": 176,
+    "zz": 144,
+    "measure": 9,
+    "barrier": 1
+   },
+   "n_2q": 144,
+   "n_1q": 528,
+   "zz_depth": 72,
+   "ideal_allzero": 0.9999999999999343
+  },
+  "E_stock_fixed_angle_P0": {
+   "role": "extended control: stock qiskit-ionq lowering of the historical circuit (each RYY -> 2 fixed ZZ(1/4)); all-to-all but fixed-angle, isolates connectivity from entangler type",
+   "K_exact": 1.0,
+   "native_ops": {
+    "gpi2": 3888,
+    "gpi": 1944,
+    "zz": 288,
+    "measure": 9,
+    "barrier": 1
+   },
+   "n_2q": 288,
+   "n_1q": 5832,
+   "zz_depth": 96,
+   "ideal_allzero": 0.9999999999992717
+  },
+  "A_full_depth_P1": {
+   "role": "primary: same logical circuit as the IBM run, arbitrary-angle ZZ, 144 ZZ",
+   "K_exact": 0.999565673885468,
+   "native_ops": {
+    "gpi2": 384,
+    "gpi": 192,
+    "zz": 144,
+    "measure": 9,
+    "barrier": 1
+   },
+   "n_2q": 144,
+   "n_1q": 576,
+   "zz_depth": 42,
+   "ideal_allzero": 0.9995656738853993
+  },
+  "A_full_depth_reordered_P1": {
+   "role": "optional control: A with ZZ order permuted inside commuting blocks (exact)",
+   "K_exact": 0.999565673885468,
+   "native_ops": {
+    "gpi2": 384,
+    "gpi": 192,
+    "zz": 144,
+    "measure": 9,
+    "barrier": 1
+   },
+   "n_2q": 144,
+   "n_1q": 576,
+   "zz_depth": 73,
+   "ideal_allzero": 0.9995656738853997
+  },
+  "E_stock_fixed_angle_P1": {
+   "role": "extended control: stock qiskit-ionq lowering of the historical circuit (each RYY -> 2 fixed ZZ(1/4)); all-to-all but fixed-angle, isolates connectivity from entangler type",
+   "K_exact": 0.999565673885468,
+   "native_ops": {
+    "gpi2": 3888,
+    "gpi": 1944,
+    "zz": 288,
+    "measure": 9,
+    "barrier": 1
+   },
+   "n_2q": 288,
+   "n_1q": 5832,
+   "zz_depth": 96,
+   "ideal_allzero": 0.9995656738847402
+  },
+  "B_fused_P1": {
+   "role": "secondary: exact fused form, 108 ZZ (best-known exact native cost)",
+   "K_exact": 0.999565673885468,
+   "native_ops": {
+    "gpi2": 336,
+    "gpi": 168,
+    "zz": 108,
+    "measure": 9,
+    "barrier": 1
+   },
+   "n_2q": 108,
+   "n_1q": 504,
+   "zz_depth": 33,
+   "ideal_allzero": 0.9995656738854068
+  },
+  "A_full_depth_P2": {
+   "role": "primary: same logical circuit as the IBM run, arbitrary-angle ZZ, 144 ZZ",
+   "K_exact": 0.0006150668453422791,
+   "native_ops": {
+    "gpi2": 576,
+    "gpi": 288,
+    "zz": 144,
+    "measure": 9,
+    "barrier": 1
+   },
+   "n_2q": 144,
+   "n_1q": 864,
+   "zz_depth": 42,
+   "ideal_allzero": 0.0006150668453422204
+  },
+  "A_full_depth_reordered_P2": {
+   "role": "optional control: A with ZZ order permuted inside commuting blocks (exact)",
+   "K_exact": 0.0006150668453422791,
+   "native_ops": {
+    "gpi2": 576,
+    "gpi": 288,
+    "zz": 144,
+    "measure": 9,
+    "barrier": 1
+   },
+   "n_2q": 144,
+   "n_1q": 864,
+   "zz_depth": 59,
+   "ideal_allzero": 0.0006150668453422165
+  },
+  "E_stock_fixed_angle_P2": {
+   "role": "extended control: stock qiskit-ionq lowering of the historical circuit (each RYY -> 2 fixed ZZ(1/4)); all-to-all but fixed-angle, isolates connectivity from entangler type",
+   "K_exact": 0.0006150668453422791,
+   "native_ops": {
+    "gpi2": 3888,
+    "gpi": 1944,
+    "zz": 288,
+    "measure": 9,
+    "barrier": 1
+   },
+   "n_2q": 288,
+   "n_1q": 5832,
+   "zz_depth": 96,
+   "ideal_allzero": 0.0006150668453418174
+  },
+  "B_fused_P2": {
+   "role": "secondary: exact fused form, 108 ZZ (best-known exact native cost)",
+   "K_exact": 0.0006150668453422791,
+   "native_ops": {
+    "gpi2": 432,
+    "gpi": 216,
+    "zz": 108,
+    "measure": 9,
+    "barrier": 1
+   },
+   "n_2q": 108,
+   "n_1q": 648,
+   "zz_depth": 33,
+   "ideal_allzero": 0.000615066845342243
+  },
+  "A_full_depth_P3": {
+   "role": "primary: same logical circuit as the IBM run, arbitrary-angle ZZ, 144 ZZ",
+   "K_exact": 0.5000036050798902,
+   "native_ops": {
+    "gpi2": 432,
+    "gpi": 216,
+    "zz": 144,
+    "measure": 9,
+    "barrier": 1
+   },
+   "n_2q": 144,
+   "n_1q": 648,
+   "zz_depth": 42,
+   "ideal_allzero": 0.5000036050798489
+  },
+  "A_full_depth_reordered_P3": {
+   "role": "optional control: A with ZZ order permuted inside commuting blocks (exact)",
+   "K_exact": 0.5000036050798902,
+   "native_ops": {
+    "gpi2": 432,
+    "gpi": 216,
+    "zz": 144,
+    "measure": 9,
+    "barrier": 1
+   },
+   "n_2q": 144,
+   "n_1q": 648,
+   "zz_depth": 85,
+   "ideal_allzero": 0.5000036050798486
+  },
+  "E_stock_fixed_angle_P3": {
+   "role": "extended control: stock qiskit-ionq lowering of the historical circuit (each RYY -> 2 fixed ZZ(1/4)); all-to-all but fixed-angle, isolates connectivity from entangler type",
+   "K_exact": 0.5000036050798902,
+   "native_ops": {
+    "gpi2": 3888,
+    "gpi": 1944,
+    "zz": 288,
+    "measure": 9,
+    "barrier": 1
+   },
+   "n_2q": 288,
+   "n_1q": 5832,
+   "zz_depth": 96,
+   "ideal_allzero": 0.5000036050795247
+  },
+  "B_fused_P3": {
+   "role": "secondary: exact fused form, 108 ZZ (best-known exact native cost)",
+   "K_exact": 0.5000036050798902,
+   "native_ops": {
+    "gpi2": 360,
+    "gpi": 180,
+    "zz": 108,
+    "measure": 9,
+    "barrier": 1
+   },
+   "n_2q": 108,
+   "n_1q": 540,
+   "zz_depth": 33,
+   "ideal_allzero": 0.5000036050798553
+  },
+  "A_full_depth_P4": {
+   "role": "primary: same logical circuit as the IBM run, arbitrary-angle ZZ, 144 ZZ",
+   "K_exact": 0.09477874495979387,
+   "native_ops": {
+    "gpi2": 408,
+    "gpi": 204,
+    "zz": 144,
+    "measure": 9,
+    "barrier": 1
+   },
+   "n_2q": 144,
+   "n_1q": 612,
+   "zz_depth": 42,
+   "ideal_allzero": 0.09477874495978679
+  },
+  "A_full_depth_reordered_P4": {
+   "role": "optional control: A with ZZ order permuted inside commuting blocks (exact)",
+   "K_exact": 0.09477874495979387,
+   "native_ops": {
+    "gpi2": 408,
+    "gpi": 204,
+    "zz": 144,
+    "measure": 9,
+    "barrier": 1
+   },
+   "n_2q": 144,
+   "n_1q": 612,
+   "zz_depth": 85,
+   "ideal_allzero": 0.09477874495978675
+  },
+  "E_stock_fixed_angle_P4": {
+   "role": "extended control: stock qiskit-ionq lowering of the historical circuit (each RYY -> 2 fixed ZZ(1/4)); all-to-all but fixed-angle, isolates connectivity from entangler type",
+   "K_exact": 0.09477874495979387,
+   "native_ops": {
+    "gpi2": 3888,
+    "gpi": 1944,
+    "zz": 288,
+    "measure": 9,
+    "barrier": 1
+   },
+   "n_2q": 288,
+   "n_1q": 5832,
+   "zz_depth": 96,
+   "ideal_allzero": 0.09477874495972462
+  },
+  "B_fused_P4": {
+   "role": "secondary: exact fused form, 108 ZZ (best-known exact native cost)",
+   "K_exact": 0.09477874495979387,
+   "native_ops": {
+    "gpi2": 348,
+    "gpi": 174,
+    "zz": 108,
+    "measure": 9,
+    "barrier": 1
+   },
+   "n_2q": 108,
+   "n_1q": 522,
+   "zz_depth": 33,
+   "ideal_allzero": 0.09477874495978791
+  },
+  "C_spam_P0_fused": {
+   "role": "control: P0 fused = empty circuit, measures state-prep + readout only",
+   "K_exact": 1.0,
+   "native_ops": {
+    "measure": 9,
+    "barrier": 1
+   },
+   "n_2q": 0,
+   "n_1q": 0,
+   "zz_depth": 0,
+   "ideal_allzero": 1.0
+  },
+  "D_half_depth_P0": {
+   "role": "control: reps=1 self-mirror of P0 (72 ZZ), depth-decay point",
+   "K_exact": 1.0,
+   "native_ops": {
+    "gpi2": 140,
+    "zz": 72,
+    "gpi": 70,
+    "measure": 9,
+    "barrier": 1
+   },
+   "n_2q": 72,
+   "n_1q": 210,
+   "zz_depth": 24,
+   "ideal_allzero": 0.9999999999999742
+  }
+ },
+ "budgets": {
+  "MINIMUM_PILOT": {
+   "circuits": [
+    "A_full_depth_P0",
+    "A_full_depth_P1",
+    "A_full_depth_P2",
+    "A_full_depth_P3",
+    "A_full_depth_P4",
+    "C_spam_P0_fused"
+   ],
+   "n_circuits": 6,
+   "shots_per_circuit": 1000,
+   "replicates": 1,
+   "tasks": 6,
+   "total_shots": 6000,
+   "kernel_entries": [
+    "P0",
+    "P1",
+    "P2",
+    "P3",
+    "P4"
+   ],
+   "max_2q_per_circuit": 144,
+   "usd_aws_braket": 481.8,
+   "usd_azure_quantum_em_off": 1363.92
+  },
+  "RECOMMENDED_REPRODUCTION": {
+   "circuits": [
+    "A_full_depth_P0",
+    "A_full_depth_P1",
+    "B_fused_P1",
+    "A_full_depth_P2",
+    "B_fused_P2",
+    "A_full_depth_P3",
+    "B_fused_P3",
+    "A_full_depth_P4",
+    "B_fused_P4",
+    "C_spam_P0_fused",
+    "D_half_depth_P0"
+   ],
+   "n_circuits": 11,
+   "shots_per_circuit": 1000,
+   "replicates": 2,
+   "tasks": 22,
+   "total_shots": 22000,
+   "kernel_entries": [
+    "P0",
+    "P1",
+    "P2",
+    "P3",
+    "P4"
+   ],
+   "max_2q_per_circuit": 144,
+   "usd_aws_braket": 1766.6,
+   "usd_azure_quantum_em_off": 4655.3
+  },
+  "EXTENDED_ROBUSTNESS": {
+   "circuits": [
+    "A_full_depth_P0",
+    "E_stock_fixed_angle_P0",
+    "A_full_depth_P1",
+    "E_stock_fixed_angle_P1",
+    "B_fused_P1",
+    "A_full_depth_P2",
+    "E_stock_fixed_angle_P2",
+    "B_fused_P2",
+    "A_full_depth_P3",
+    "E_stock_fixed_angle_P3",
+    "B_fused_P3",
+    "A_full_depth_P4",
+    "E_stock_fixed_angle_P4",
+    "B_fused_P4",
+    "C_spam_P0_fused",
+    "D_half_depth_P0"
+   ],
+   "n_circuits": 16,
+   "shots_per_circuit": 2000,
+   "replicates": 3,
+   "tasks": 48,
+   "total_shots": 96000,
+   "kernel_entries": [
+    "P0",
+    "P1",
+    "P2",
+    "P3",
+    "P4"
+   ],
+   "max_2q_per_circuit": 288,
+   "usd_aws_braket": 7694.4,
+   "usd_azure_quantum_em_off": 52354.88
+  }
+ },
+ "qollab_credit_conversion": "UNKNOWN - Qollab has not published a credit accounting model"
+}
